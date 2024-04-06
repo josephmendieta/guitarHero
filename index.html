@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guitar Hero</title>
+    <link rel="stylesheet" href="./estilos/styles.css">
+    <script src="./js/main.js"></script>
+    <link rel="icon" href="./img/icono.png">
+    
+    
+</head>
+
+<body>
+    <audio id="bgMusic" loop autoplay>
+        <source src="y2mate.com - Guns N Roses  Welcome To The Jungle Guitars Only.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <div class="game-container">
+        <div class="column" id="column1">
+            <div class="key">Z</div>
+            <div class="fret"></div>
+        </div>
+        <div class="column" id="column2">
+            <div class="key">X</div>
+            <div class="fret"></div>
+        </div>
+        <div class="column" id="column3">
+            <div class="key">C</div>
+            <div class="fret"></div>
+        </div>
+        <div class="column" id="column4">
+            <div class="key">V</div>
+            <div class="fret"></div>
+        </div>
+        <div class="strings"></div>
+        <div id="score">Puntos: 0</div>
+        <div class="score-zone"></div>
+    </div>
+    <div style="text-align: center;">
+        <button class="control-btn" id="start-btn" onclick="startGame()">Inicio</button>
+        <button class="control-btn" id="pause-btn" onclick="togglePause()" disabled>Pausar / Despausar</button>
+        <button class="control-btn" id="restart-btn" onclick="restartGame()" disabled>Reiniciar</button>
+    </div>
+
+</body>
+
+</html>
